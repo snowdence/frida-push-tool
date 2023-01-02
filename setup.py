@@ -1,12 +1,12 @@
 from setuptools import setup
 
-from frida_push import __version__
+from frida_push_tool import __version__
 
 setup(
-    name='frida-push',
+    name='frida-push-tool',
     version=__version__,
-    packages=['frida_push'],
-    url='https://github.com/AndroidTamer/frida-push',
+    packages=['frida_push_tool'],
+    url='https://github.com/snowdence/frida-push',
     license='GPLv3',
     author='AndroidTamer',
     author_email='github@androidtamer.com',
@@ -14,7 +14,7 @@ setup(
     install_requires=['requests', 'frida', 'backports.lzma', 'future'],
     entry_points={
         'console_scripts': [
-            'frida-push = frida_push.command:main'
+            'frida-push-tool = frida_push_tool.command:main'
         ]
     }
 )

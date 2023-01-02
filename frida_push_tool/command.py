@@ -31,11 +31,11 @@ from os import path
 import backports.lzma
 import requests
 
-from frida_push import __version__
+from frida_push_tool import __version__
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO,
                     format="[%(asctime)s] [%(name)s: %(levelname)s]: %(message)s")
-log = logging.getLogger("frida-push")
+log = logging.getLogger("frida-push-tool")
 
 try:
     from frida import __version__ as FRIDA_VERSION
@@ -45,7 +45,7 @@ except ImportError:
 
 # Just put "adb" below, if adb exists in your system path.
 ADB_PATH = "adb"
-DOWNLOAD_PATH = path.expanduser("~/.frida-push")
+DOWNLOAD_PATH = path.expanduser("~/.frida-push-tool")
 
 
 def list_devices():
