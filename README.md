@@ -41,3 +41,4 @@ $ frida-push -d emulator-5554
 [2018-01-16 13:15:27,704] [frida-push: INFO]: Executing frida-server on device.
 
 ```
+# frida-push-tool
