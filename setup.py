@@ -11,7 +11,7 @@ setup(
     author='AndroidTamer',
     author_email='github@androidtamer.com',
     description='Wrapper tool to identify the remote device and push device specific frida-server binary.',
-    install_requires=['requests', 'frida', 'lzma', 'future'],
+    install_requires=['requests', 'frida', 'future'],
     entry_points={
         'console_scripts': [
             'frida-push-tool = frida_push_tool.command:main'
